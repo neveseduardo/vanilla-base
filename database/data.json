@@ -1,0 +1,756 @@
+{
+  "usuarios": [
+    {
+      "id": "64f9",
+      "name": "ADMINISTRADOR",
+      "email": "email@email.com",
+      "password": "123",
+      "role": "Administrador",
+      "created_at": "2024-03-04 19:02:18",
+      "updated_at": "2024-03-04 19:02:18"
+    }
+  ],
+  "alunos": [
+    {
+      "id": "a1b2",
+      "name": "Fernanda Oliveira Costa",
+      "email": "fernanda.costa@example.com",
+      "phone_number": "11987654321",
+      "created_at": "2024-03-04 16:03:07",
+      "updated_at": "2024-03-04 16:03:07"
+    },
+    {
+      "id": "b3c4",
+      "name": "Rafaela Santos Almeida",
+      "email": "rafaela.santos@example.com",
+      "phone_number": "11998765432",
+      "created_at": "2024-03-04 16:03:07",
+      "updated_at": "2024-03-04 16:03:07"
+    },
+    {
+      "id": "c5d6",
+      "name": "Thiago Mendes Pereira",
+      "email": "thiago.mendes@example.com",
+      "phone_number": "11987651234",
+      "created_at": "2024-03-04 16:03:07",
+      "updated_at": "2024-03-04 16:03:07"
+    },
+    {
+      "id": "d7e8",
+      "name": "Pedro Rodrigues Silva",
+      "email": "pedro.rodrigues@example.com",
+      "phone_number": "11998766543",
+      "created_at": "2024-03-04 16:03:07",
+      "updated_at": "2024-03-04 16:03:07"
+    },
+    {
+      "id": "e9f0",
+      "name": "Ana Luiza Fernandes Costa",
+      "email": "ana.luiza@example.com",
+      "phone_number": "11987656789",
+      "created_at": "2024-03-04 16:03:07",
+      "updated_at": "2024-03-04 16:03:07"
+    },
+    {
+      "id": "f0g1",
+      "name": "Gustavo Alves Martins",
+      "email": "gustavo.alves@example.com",
+      "phone_number": "11998769876",
+      "created_at": "2024-03-04 16:03:07",
+      "updated_at": "2024-03-04 16:03:07"
+    },
+    {
+      "id": "g1h2",
+      "name": "Mariana Costa Oliveira",
+      "email": "mariana.costa@example.com",
+      "phone_number": "11987658765",
+      "created_at": "2024-03-04 16:03:07",
+      "updated_at": "2024-03-04 16:03:07"
+    },
+    {
+      "id": "h2i3",
+      "name": "Lucas Pereira Mendes",
+      "email": "lucas.pereira@example.com",
+      "phone_number": "11998768765",
+      "created_at": "2024-03-04 16:03:07",
+      "updated_at": "2024-03-04 16:03:07"
+    },
+    {
+      "id": "i3j4",
+      "name": "Carolina Santos Rocha",
+      "email": "carolina.santos@example.com",
+      "phone_number": "11987655678",
+      "created_at": "2024-03-04 16:03:07",
+      "updated_at": "2024-03-04 16:03:07"
+    },
+    {
+      "id": "j4k5",
+      "name": "Diego Fernandes Almeida",
+      "email": "diego.fernandes@example.com",
+      "phone_number": "11998762345",
+      "created_at": "2024-03-04 16:03:07",
+      "updated_at": "2024-03-04 16:03:07"
+    },
+    {
+      "id": "k5l6",
+      "name": "Bianca Oliveira Mendes",
+      "email": "bianca.oliveira@example.com",
+      "phone_number": "11987655432",
+      "created_at": "2024-03-04 16:03:07",
+      "updated_at": "2024-03-04 16:03:07"
+    },
+    {
+      "id": "l6m7",
+      "name": "Thales Costa Silva",
+      "email": "thales.costa@example.com",
+      "phone_number": "11998766543",
+      "created_at": "2024-03-04 16:03:07",
+      "updated_at": "2024-03-04 16:03:07"
+    },
+    {
+      "id": "m7n8",
+      "name": "Marina Almeida Rodrigues",
+      "email": "marina.almeida@example.com",
+      "phone_number": "11987657654",
+      "created_at": "2024-03-04 16:03:07",
+      "updated_at": "2024-03-04 16:03:07"
+    },
+    {
+      "id": "n8o9",
+      "name": "Felipe Mendes Fernandes",
+      "email": "felipe.mendes@example.com",
+      "phone_number": "11998768765",
+      "created_at": "2024-03-04 16:03:07",
+      "updated_at": "2024-03-04 16:03:07"
+    },
+    {
+      "id": "o9p0",
+      "name": "Raquel Oliveira Pereira",
+      "email": "raquel.oliveira@example.com",
+      "phone_number": "11987659876",
+      "created_at": "2024-03-04 16:03:07",
+      "updated_at": "2024-03-04 16:03:07"
+    },
+    {
+      "id": "p0q1",
+      "name": "Luciana Silva Costa",
+      "email": "luciana.silva@example.com",
+      "phone_number": "11998760987",
+      "created_at": "2024-03-04 16:03:07",
+      "updated_at": "2024-03-04 16:03:07"
+    },
+    {
+      "id": "q1r2",
+      "name": "Marcos Fernandes Almeida",
+      "email": "marcos.fernandes@example.com",
+      "phone_number": "11987658765",
+      "created_at": "2024-03-04 16:03:07",
+      "updated_at": "2024-03-04 16:03:07"
+    },
+    {
+      "id": "r2s3",
+      "name": "Natalia Costa Santos",
+      "email": "natalia.costa@example.com",
+      "phone_number": "11998767654",
+      "created_at": "2024-03-04 16:03:07",
+      "updated_at": "2024-03-04 16:03:07"
+    },
+    {
+      "id": "s3t4",
+      "name": "Renato Oliveira Pereira",
+      "email": "renato.oliveira@example.com",
+      "phone_number": "11987656543",
+      "created_at": "2024-03-04 16:03:07",
+      "updated_at": "2024-03-04 16:03:07"
+    },
+    {
+      "id": "t4u5",
+      "name": "Vanessa Pereira Fernandes",
+      "email": "vanessa.pereira@example.com",
+      "phone_number": "11998765432",
+      "created_at": "2024-03-04 16:03:07",
+      "updated_at": "2024-03-04 16:03:07"
+    }
+  ],
+  "professores": [
+    {
+      "id": "4d71",
+      "name": "Patrícia da Silva Santos",
+      "email": "patricia.silva@example.com",
+      "phone_number": "11987654321",
+      "created_at": "2024-03-04 16:03:07",
+      "updated_at": "2024-03-04 16:03:07"
+    },
+    {
+      "id": "1a9b",
+      "name": "Guilherme de Oliveira Souza",
+      "email": "guilherme.oliveira@example.com",
+      "phone_number": "11998765432",
+      "created_at": "2024-03-04 16:03:07",
+      "updated_at": "2024-03-04 16:03:07"
+    },
+    {
+      "id": "3e5f",
+      "name": "Beatriz Costa Pereira Martins",
+      "email": "beatriz.costa@example.com",
+      "phone_number": "11987651234",
+      "created_at": "2024-03-04 16:03:07",
+      "updated_at": "2024-03-04 16:03:07"
+    },
+    {
+      "id": "8c2d",
+      "name": "Rodrigo Almeida Gonçalves",
+      "email": "rodrigo.almeida@example.com",
+      "phone_number": "11998766543",
+      "created_at": "2024-03-04 16:03:07",
+      "updated_at": "2024-03-04 16:03:07"
+    },
+    {
+      "id": "7f4e",
+      "name": "Isabela Ferreira Rodrigues Mendes",
+      "email": "isabela.ferreira@example.com",
+      "phone_number": "11987656789",
+      "created_at": "2024-03-04 16:03:07",
+      "updated_at": "2024-03-04 16:03:07"
+    },
+    {
+      "id": "2b8a",
+      "name": "André Luiz Cardoso Rocha",
+      "email": "andre.luiz@example.com",
+      "phone_number": "11998769876",
+      "created_at": "2024-03-04 16:03:07",
+      "updated_at": "2024-03-04 16:03:07"
+    },
+    {
+      "id": "5g3h",
+      "name": "Camila Oliveira Costa Silva",
+      "email": "camila.oliveira@example.com",
+      "phone_number": "11987658765",
+      "created_at": "2024-03-04 16:03:07",
+      "updated_at": "2024-03-04 16:03:07"
+    },
+    {
+      "id": "9i6j",
+      "name": "Leonardo Pereira Santos Oliveira",
+      "email": "leonardo.pereira@example.com",
+      "phone_number": "11998768765",
+      "created_at": "2024-03-04 16:03:07",
+      "updated_at": "2024-03-04 16:03:07"
+    },
+    {
+      "id": "6k7l",
+      "name": "Juliana Mendonça Fernandes Martins",
+      "email": "juliana.mendonca@example.com",
+      "phone_number": "11987655678",
+      "created_at": "2024-03-04 16:03:07",
+      "updated_at": "2024-03-04 16:03:07"
+    },
+    {
+      "id": "0m9n",
+      "name": "Lucas Silva Alves Pereira",
+      "email": "lucas.silva@example.com",
+      "phone_number": "11998762345",
+      "created_at": "2024-03-04 16:03:07",
+      "updated_at": "2024-03-04 16:03:07"
+    }
+  ],
+  "frequencias": [],
+  "turmas": [
+    {
+      "id": "0ef9",
+      "id_curso": "c002",
+      "name_curso": "Web Design Responsivo",
+      "period": "EAD",
+      "created_at": "2024-03-05 16:20:23",
+      "updated_at": "2024-03-05 16:20:23"
+    },
+    {
+      "id": "2f63",
+      "id_curso": "c001",
+      "name_curso": "Introdução à Inteligência Artificial",
+      "period": "EAD",
+      "created_at": "2024-03-05 16:21:16",
+      "updated_at": "2024-03-05 16:21:16"
+    },
+    {
+      "id": "0d26",
+      "id_curso": "c004",
+      "name_curso": "Marketing Digital",
+      "period": "EAD",
+      "created_at": "2024-03-05 16:21:24",
+      "updated_at": "2024-03-05 16:21:24"
+    },
+    {
+      "id": "6ccb",
+      "id_curso": "c006",
+      "name_curso": "Fotografia Digital",
+      "period": "EAD",
+      "created_at": "2024-03-05 16:21:30",
+      "updated_at": "2024-03-05 16:21:30"
+    }
+  ],
+  "matriculas": [
+    {
+      "id": "abf5",
+      "id_aluno": "a1b2",
+      "id_turma": "0ef9",
+      "name_turma": "Web Design Responsivo-EAD",
+      "name_aluno": "Fernanda Oliveira Costa",
+      "created_at": "2024-03-05 16:24:27",
+      "updated_at": "2024-03-05 16:24:27",
+      "active": 1
+    },
+    {
+      "id": "8cf5",
+      "id_aluno": "b3c4",
+      "id_turma": "0ef9",
+      "name_turma": "Web Design Responsivo-EAD",
+      "name_aluno": "Rafaela Santos Almeida",
+      "created_at": "2024-03-05 16:30:35",
+      "updated_at": "2024-03-05 16:30:35"
+    },
+    {
+      "id": "d006",
+      "id_aluno": "c5d6",
+      "id_turma": "0ef9",
+      "name_turma": "Web Design Responsivo-EAD",
+      "name_aluno": "Thiago Mendes Pereira",
+      "created_at": "2024-03-05 16:30:41",
+      "updated_at": "2024-03-05 16:30:41"
+    },
+    {
+      "id": "c020",
+      "id_aluno": "d7e8",
+      "id_turma": "0ef9",
+      "name_turma": "Web Design Responsivo-EAD",
+      "name_aluno": "Pedro Rodrigues Silva",
+      "created_at": "2024-03-05 16:30:55",
+      "updated_at": "2024-03-05 16:30:55"
+    },
+    {
+      "id": "1204",
+      "id_aluno": "b3c4",
+      "id_turma": "0ef9",
+      "name_turma": "Web Design Responsivo-EAD",
+      "name_aluno": "Rafaela Santos Almeida",
+      "created_at": "2024-03-08 20:27:25",
+      "updated_at": "2024-03-08 20:27:25"
+    }
+  ],
+  "pagamentos": [
+    {
+      "id_aluno": "a1b2",
+      "id_matricula": "abf5",
+      "ammount": "1200",
+      "status": "Pago",
+      "due_date": "2024-03-15",
+      "name_aluno": "Fernanda Oliveira Costa",
+      "created_at": "2024-03-05 16:33:59",
+      "updated_at": "2024-03-05 16:33:59",
+      "formated_due_date": "15/03/2024 00:00:00",
+      "id": "bf83"
+    },
+    {
+      "id_aluno": "b3c4",
+      "id_matricula": "8cf5",
+      "ammount": "500",
+      "status": "Pendente",
+      "due_date": "2024-03-15",
+      "name_aluno": "Rafaela Santos Almeida",
+      "created_at": "2024-03-08 20:23:27",
+      "updated_at": "2024-03-08 20:23:27",
+      "formated_due_date": "15/03/2024 00:00:00",
+      "id": "b51c"
+    }
+  ],
+  "notas": [
+    {
+      "id": "fe4f",
+      "id_aluno": "a1b2",
+      "name_aluno": "Fernanda Oliveira Costa",
+      "id_disciplina": "a001",
+      "name_disciplina": "Fundamentos de Inteligência Artificial",
+      "description": "",
+      "value": 10,
+      "year": "2024",
+      "trimestre": 1,
+      "created_at": "2024-03-05 16:28:16",
+      "updated_at": "2024-03-05 16:28:16"
+    },
+    {
+      "id": "859e",
+      "id_aluno": "b3c4",
+      "name_aluno": "Rafaela Santos Almeida",
+      "id_disciplina": "a001",
+      "name_disciplina": "Fundamentos de Inteligência Artificial",
+      "description": "",
+      "value": 5,
+      "year": "2024",
+      "trimestre": 1,
+      "created_at": "2024-03-05 16:28:43",
+      "updated_at": "2024-03-05 16:28:43"
+    },
+    {
+      "id": "d59d",
+      "id_aluno": "c5d6",
+      "name_aluno": "Thiago Mendes Pereira",
+      "id_disciplina": "a003",
+      "name_disciplina": "Redes Neurais Artificiais",
+      "description": "",
+      "value": 10,
+      "year": "2023",
+      "trimestre": 2,
+      "created_at": "2024-03-08 20:25:43",
+      "updated_at": "2024-03-08 20:25:43"
+    }
+  ],
+  "disciplinas": [
+    {
+      "name": "Fundamentos de Inteligência Artificial",
+      "description": "Conceitos básicos sobre inteligência artificial.",
+      "id_curso": "c001",
+      "name_curso": "Introdução à Inteligência Artificial",
+      "id": "a001",
+      "created_at": "2024-03-04 16:27:02",
+      "updated_at": "2024-03-04 16:27:02"
+    },
+    {
+      "name": "Aprendizado de Máquina Básico",
+      "description": "Introdução ao aprendizado de máquina.",
+      "id_curso": "c001",
+      "name_curso": "Introdução à Inteligência Artificial",
+      "id": "a002",
+      "created_at": "2024-03-04 16:27:02",
+      "updated_at": "2024-03-04 16:27:02"
+    },
+    {
+      "name": "Redes Neurais Artificiais",
+      "description": "Conceitos e aplicações de redes neurais artificiais.",
+      "id_curso": "c001",
+      "name_curso": "Introdução à Inteligência Artificial",
+      "id": "a003",
+      "created_at": "2024-03-04 16:27:02",
+      "updated_at": "2024-03-04 16:27:02"
+    },
+    {
+      "name": "Processamento de Linguagem Natural",
+      "description": "Princípios e técnicas de processamento de linguagem natural.",
+      "id_curso": "c001",
+      "name_curso": "Introdução à Inteligência Artificial",
+      "id": "a004",
+      "created_at": "2024-03-04 16:27:02",
+      "updated_at": "2024-03-04 16:27:02"
+    },
+    {
+      "name": "Aplicações Práticas em IA",
+      "description": "Casos de uso e implementações reais de inteligência artificial.",
+      "id_curso": "c001",
+      "name_curso": "Introdução à Inteligência Artificial",
+      "id": "a005",
+      "created_at": "2024-03-04 16:27:02",
+      "updated_at": "2024-03-04 16:27:02"
+    },
+    {
+      "name": "HTML e CSS Fundamentais",
+      "description": "Princípios básicos de HTML e CSS.",
+      "id_curso": "c002",
+      "name_curso": "Web Design Responsivo",
+      "id": "b001",
+      "created_at": "2024-03-04 16:27:02",
+      "updated_at": "2024-03-04 16:27:02"
+    },
+    {
+      "name": "Responsividade e Media Queries",
+      "description": "Técnicas para criar layouts responsivos.",
+      "id_curso": "c002",
+      "name_curso": "Web Design Responsivo",
+      "id": "b002",
+      "created_at": "2024-03-04 16:27:02",
+      "updated_at": "2024-03-04 16:27:02"
+    },
+    {
+      "name": "Frameworks Front-end",
+      "description": "Introdução aos principais frameworks front-end.",
+      "id_curso": "c002",
+      "name_curso": "Web Design Responsivo",
+      "id": "b003",
+      "created_at": "2024-03-04 16:27:02",
+      "updated_at": "2024-03-04 16:27:02"
+    },
+    {
+      "name": "Introdução ao JavaScript para Web Designers",
+      "description": "Conceitos básicos de JavaScript para web designers.",
+      "id_curso": "c002",
+      "name_curso": "Web Design Responsivo",
+      "id": "b004",
+      "created_at": "2024-03-04 16:27:02",
+      "updated_at": "2024-03-04 16:27:02"
+    },
+    {
+      "name": "Otimização de Performance para Web",
+      "description": "Melhores práticas para otimizar a performance de sites.",
+      "id_curso": "c002",
+      "name_curso": "Web Design Responsivo",
+      "id": "b005",
+      "created_at": "2024-03-04 16:27:02",
+      "updated_at": "2024-03-04 16:27:02"
+    },
+    {
+      "name": "Introdução ao Scrum",
+      "description": "Princípios e práticas do framework Scrum.",
+      "id_curso": "c003",
+      "name_curso": "Gestão de Projetos Ágeis",
+      "id": "c001",
+      "created_at": "2024-03-04 16:27:02",
+      "updated_at": "2024-03-04 16:27:02"
+    },
+    {
+      "name": "Kanban: Princípios e Práticas",
+      "description": "Conceitos e aplicação do método Kanban.",
+      "id_curso": "c003",
+      "name_curso": "Gestão de Projetos Ágeis",
+      "id": "c002",
+      "created_at": "2024-03-04 16:27:02",
+      "updated_at": "2024-03-04 16:27:02"
+    },
+    {
+      "name": "Lean Thinking aplicado a Projetos",
+      "description": "Fundamentos do Lean e sua aplicação em projetos.",
+      "id_curso": "c003",
+      "name_curso": "Gestão de Projetos Ágeis",
+      "id": "c003",
+      "created_at": "2024-03-04 16:27:02",
+      "updated_at": "2024-03-04 16:27:02"
+    },
+    {
+      "name": "Gestão de Stakeholders e Comunicação Efetiva",
+      "description": "Estratégias para gerenciar stakeholders e manter uma comunicação efetiva.",
+      "id_curso": "c003",
+      "name_curso": "Gestão de Projetos Ágeis",
+      "id": "c004",
+      "created_at": "2024-03-04 16:27:02",
+      "updated_at": "2024-03-04 16:27:02"
+    },
+    {
+      "name": "Métricas e Monitoramento de Projetos Ágeis",
+      "description": "Principais métricas e ferramentas para monitorar projetos ágeis.",
+      "id_curso": "c003",
+      "name_curso": "Gestão de Projetos Ágeis",
+      "id": "c005",
+      "created_at": "2024-03-04 16:27:02",
+      "updated_at": "2024-03-04 16:27:02"
+    },
+    {
+      "name": "SEO (Otimização para Motores de Busca)",
+      "description": "Estratégias para melhorar o posicionamento em motores de busca.",
+      "id_curso": "c004",
+      "name_curso": "Marketing Digital",
+      "id": "d001",
+      "created_at": "2024-03-04 16:27:02",
+      "updated_at": "2024-03-04 16:27:02"
+    },
+    {
+      "name": "Marketing de Conteúdo e Blogging",
+      "description": "Criação e promoção de conteúdo relevante para atrair clientes.",
+      "id_curso": "c004",
+      "name_curso": "Marketing Digital",
+      "id": "d002",
+      "created_at": "2024-03-04 16:27:02",
+      "updated_at": "2024-03-04 16:27:02"
+    },
+    {
+      "name": "Publicidade Online",
+      "description": "Princípios e técnicas de publicidade online.",
+      "id_curso": "c004",
+      "name_curso": "Marketing Digital",
+      "id": "d003",
+      "created_at": "2024-03-04 16:27:02",
+      "updated_at": "2024-03-04 16:27:02"
+    },
+    {
+      "name": "Email Marketing e Automação",
+      "description": "Estratégias para criar campanhas de email marketing eficazes.",
+      "id_curso": "c004",
+      "name_curso": "Marketing Digital",
+      "id": "d004",
+      "created_at": "2024-03-04 16:27:02",
+      "updated_at": "2024-03-04 16:27:02"
+    },
+    {
+      "name": "Análise de Dados e Métricas em Marketing Digital",
+      "description": "Interpretação de dados e métricas para avaliar o desempenho de campanhas digitais.",
+      "id_curso": "c004",
+      "name_curso": "Marketing Digital",
+      "id": "d005",
+      "created_at": "2024-03-04 16:27:02",
+      "updated_at": "2024-03-04 16:27:02"
+    },
+    {
+      "name": "Vocabulário e Frases Comuns no Ambiente Corporativo",
+      "description": "Expressões e termos utilizados em situações profissionais.",
+      "id_curso": "c005",
+      "name_curso": "Inglês para Negócios",
+      "id": "e001",
+      "created_at": "2024-03-04 16:27:02",
+      "updated_at": "2024-03-04 16:27:02"
+    },
+    {
+      "name": "Reuniões e Apresentações em Inglês",
+      "description": "Como conduzir reuniões e apresentações de forma eficaz em inglês.",
+      "id_curso": "c005",
+      "name_curso": "Inglês para Negócios",
+      "id": "e002",
+      "created_at": "2024-03-04 16:27:02",
+      "updated_at": "2024-03-04 16:27:02"
+    },
+    {
+      "name": "Escrita de Emails Profissionais",
+      "description": "Estratégias para redigir emails profissionais claros e objetivos.",
+      "id_curso": "c005",
+      "name_curso": "Inglês para Negócios",
+      "id": "e003",
+      "created_at": "2024-03-04 16:27:02",
+      "updated_at": "2024-03-04 16:27:02"
+    },
+    {
+      "name": "Negociações e Vendas em Inglês",
+      "description": "Técnicas de negociação e vendas em inglês.",
+      "id_curso": "c005",
+      "name_curso": "Inglês para Negócios",
+      "id": "e004",
+      "created_at": "2024-03-04 16:27:02",
+      "updated_at": "2024-03-04 16:27:02"
+    },
+    {
+      "name": "Preparação para Entrevistas de Emprego em Inglês",
+      "description": "Como se preparar e se destacar em entrevistas de emprego em inglês.",
+      "id_curso": "c005",
+      "name_curso": "Inglês para Negócios",
+      "id": "e005",
+      "created_at": "2024-03-04 16:27:02",
+      "updated_at": "2024-03-04 16:27:02"
+    }
+  ],
+  "cursos": [
+    {
+      "id": "c001",
+      "name": "Introdução à Inteligência Artificial",
+      "description": "Este curso oferece uma visão geral da inteligência artificial, incluindo aprendizado de máquina, redes neurais e aplicações práticas.",
+      "workload": 40,
+      "created_at": "2024-03-04 13:11:18",
+      "updated_at": "2024-03-04 13:11:18"
+    },
+    {
+      "id": "c002",
+      "name": "Web Design Responsivo",
+      "description": "Aprenda a criar sites responsivos que se adaptam a diferentes dispositivos, como smartphones, tablets e desktops.",
+      "workload": 25,
+      "created_at": "2024-03-04 13:11:18",
+      "updated_at": "2024-03-04 13:11:18"
+    },
+    {
+      "id": "c003",
+      "name": "Gestão de Projetos Ágeis",
+      "description": "Conheça os princípios e práticas da gestão de projetos ágeis, incluindo Scrum, Kanban e Lean.",
+      "workload": 35,
+      "created_at": "2024-03-04 13:11:18",
+      "updated_at": "2024-03-04 13:11:18"
+    },
+    {
+      "id": "c004",
+      "name": "Marketing Digital",
+      "description": "Aprenda estratégias de marketing digital, incluindo SEO, redes sociais, email marketing e análise de dados.",
+      "workload": 45,
+      "created_at": "2024-03-04 13:11:18",
+      "updated_at": "2024-03-04 13:11:18"
+    },
+    {
+      "id": "c005",
+      "name": "Inglês para Negócios",
+      "description": "Desenvolva suas habilidades de comunicação em inglês para situações profissionais, como reuniões, apresentações e emails.",
+      "workload": 30,
+      "created_at": "2024-03-04 13:11:18",
+      "updated_at": "2024-03-04 13:11:18"
+    },
+    {
+      "id": "c006",
+      "name": "Fotografia Digital",
+      "description": "Aprenda os fundamentos da fotografia digital, incluindo composição, iluminação e edição de imagens.",
+      "workload": 40,
+      "created_at": "2024-03-04 13:11:18",
+      "updated_at": "2024-03-04 13:11:18"
+    },
+    {
+      "id": "c007",
+      "name": "Finanças Pessoais",
+      "description": "Domine conceitos básicos de finanças pessoais, incluindo orçamento, investimentos e planejamento para o futuro.",
+      "workload": 20,
+      "created_at": "2024-03-04 13:11:18",
+      "updated_at": "2024-03-04 13:11:18"
+    },
+    {
+      "id": "c008",
+      "name": "Nutrição e Bem-Estar",
+      "description": "Descubra como uma alimentação saudável pode melhorar sua qualidade de vida e bem-estar geral.",
+      "workload": 35,
+      "created_at": "2024-03-04 13:11:18",
+      "updated_at": "2024-03-04 13:11:18"
+    },
+    {
+      "id": "c009",
+      "name": "Desenvolvimento Android",
+      "description": "Aprenda a desenvolver aplicativos para dispositivos Android, utilizando Java e Kotlin.",
+      "workload": 50,
+      "created_at": "2024-03-04 13:11:18",
+      "updated_at": "2024-03-04 13:11:18"
+    },
+    {
+      "id": "c010",
+      "name": "Escrita Criativa",
+      "description": "Explore sua criatividade e desenvolva habilidades de escrita em diversos gêneros literários, como contos, poesia e romance.",
+      "workload": 30,
+      "created_at": "2024-03-04 13:11:18",
+      "updated_at": "2024-03-04 13:11:18"
+    },
+    {
+      "id": "c011",
+      "name": "Gastronomia Italiana",
+      "description": "Aprenda a preparar pratos clássicos da culinária italiana, incluindo massas, risotos e sobremesas.",
+      "workload": 40,
+      "created_at": "2024-03-04 13:11:18",
+      "updated_at": "2024-03-04 13:11:18"
+    },
+    {
+      "id": "c012",
+      "name": "Yoga e Meditação",
+      "description": "Pratique técnicas de yoga e meditação para melhorar sua saúde física, mental e emocional.",
+      "workload": 30,
+      "created_at": "2024-03-04 13:11:18",
+      "updated_at": "2024-03-04 13:11:18"
+    },
+    {
+      "id": "c013",
+      "name": "Programação em C++",
+      "description": "Aprenda os fundamentos da linguagem de programação C++ e desenvolva aplicativos e jogos.",
+      "workload": 45,
+      "created_at": "2024-03-04 13:11:18",
+      "updated_at": "2024-03-04 13:11:18"
+    },
+    {
+      "id": "c014",
+      "name": "Gestão de Recursos Humanos",
+      "description": "Conheça os princípios e técnicas da gestão de recursos humanos para maximizar o desempenho e a satisfação dos funcionários.",
+      "workload": 35,
+      "created_at": "2024-03-04 13:11:18",
+      "updated_at": "2024-03-04 13:11:18"
+    },
+    {
+      "id": "c015",
+      "name": "Pintura em Aquarela",
+      "description": "Aprenda as técnicas básicas de pintura em aquarela e crie belas obras de arte.",
+      "workload": 25,
+      "created_at": "2024-03-04 13:11:18",
+      "updated_at": "2024-03-04 13:11:18"
+    }
+  ]
+}

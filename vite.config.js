@@ -7,6 +7,10 @@ export default defineConfig({
 	server: {
 		port: 8080,
 		host: true,
+		open: true,
+		fs: {
+			strict: false,
+		},
 	},
 	resolve: {
 		alias: { '@': resolve(__dirname, './src') },
