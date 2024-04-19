@@ -1,4 +1,5 @@
 import page from 'page';
+import { RouteModules } from './modules';
 
 function loadPage(pageName, layout = 'dashboard') {
 	const layouts = {
@@ -41,36 +42,38 @@ function isAuthenticated() {
 	return true;
 }
 
-function requireAuth(ctx, next) {
-	if (!isAuthenticated()) {
-		page.redirect('/login');
-	} else {
-		next();
+function routeMiddleware(name = 'guest') {
+	function requireAuth(ctx, next) {
+		if (!isAuthenticated()) {
+			page.redirect('/login');
+		} else {
+			next();
+		}
 	}
-}
-function requireGuest(ctx, next) {
-	if (isAuthenticated()) {
-		page.redirect('/');
-	} else {
-		next();
+	function requireGuest(ctx, next) {
+		if (isAuthenticated()) {
+			page.redirect('/');
+		} else {
+			next();
+		}
 	}
+
+	if (name === 'auth') {
+		return requireAuth;
+	}
+
+	if (name === 'guest') {
+		return requireGuest;
+	}
+
+	return undefined;
 }
 
 export const router = () => {
-	page('/login', requireGuest, () => {
-		loadPage('login', 'auth');
-	});
-
-	page('/', requireAuth, () => {
-		loadPage('home');
-	});
-
-	page('/contact', requireAuth, () => {
-		loadPage('contact');
-	});
-
-	page('/about', requireAuth, () => {
-		loadPage('about');
+	RouteModules.forEach((_) => {
+		page(_.path, routeMiddleware(_.permission), () => {
+			loadPage(_.fileName, _.layout);
+		});
 	});
 
 	page('*', () => {
