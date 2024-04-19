@@ -1,0 +1,6 @@
+:root {
+	--bg-default: #CECECE;
+	--text-color-default: #185f8f;
+	--sidebar-opened-width: 300px;
+	--sidebar-closed-width: 60px;
+}

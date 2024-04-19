@@ -1,4 +1,4 @@
-import './assets/sass/app.scss';
+import './assets/css/app.css';
 import '@iconify/iconify';
 
 import { router } from '@/router';
