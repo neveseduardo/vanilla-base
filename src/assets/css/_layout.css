@@ -1,3 +1,97 @@
 .dashboard-layout {
-
+    width: 100%;
+    min-height: 100vh;
+    background-color: #CBCBCB;
+    position: relative;
 }
+
+.dashboard-layout-sidebar {
+    width: var(--sidebar-closed-width);
+    height: 100vh;
+    overflow: hidden;
+    background-color: #FFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 300ms ease-in-out;
+}
+
+.dashboard-layout-sidebar.opened {
+    width: var(--sidebar-opened-width);
+    transition: all 300ms ease-in-out;
+}
+.dashboard-layout-sidebar .sidebar-toggler {
+    border: none;
+    background: #333;
+    color: #FFF;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    transform: rotate(90deg);
+    font-size: 1.5rem;
+}
+.dashboard-layout-sidebar.opened .sidebar-toggler {
+    transform: rotate(0);
+    transition: all 300ms ease-in-out;
+}
+
+.dashboard-layout-sidebar-title {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.sidebar-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: calc(var(--sidebar-closed-width) - 20px);
+    min-height: calc(var(--sidebar-closed-width) - 20px);
+}
+.sidebar-text-wrapper {
+    text-wrap: nowrap;
+}
+.dashboard-layout-sidebar-menu-item {
+    justify-content: center;    
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 0 10px;
+}
+.dashboard-layout-sidebar-menu-parent {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.dashboard-layout-sidebar-menu-children {
+    background-color: #DEDEDE;
+}
+.dashboard-layout-sidebar-menu-children ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-layout-content {
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem 2rem 2rem calc(var(--sidebar-closed-width) + 2rem);
+    transition: all 300ms ease-in-out;
+}
+.dashboard-layout-content.opened {
+    padding: 2rem 2rem 2rem calc(var(--sidebar-opened-width) + 2rem);
+    transition: all 300ms ease-in-out;
+}
+
