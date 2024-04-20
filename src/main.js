@@ -3,4 +3,7 @@ import '@iconify/iconify';
 
 import { router } from '@/router';
 
-router();
+document.addEventListener('DOMContentLoaded', () => {
+    router();
+});
+

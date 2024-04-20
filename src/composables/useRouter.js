@@ -16,9 +16,18 @@ export const useRouter = () => {
 				const newScript = document.createElement('script');
 				newScript.type = 'module';
 				newScript.src = script.src;
-				document.body.appendChild(newScript);
+				newScript.setAttribute('data-mode', 'module');
+				document.head.appendChild(newScript);
 			}
 
+			script.remove();
+		}
+	}
+
+	function removeScripts() {
+		const scripts = document.getElementById('app').querySelectorAll('script');
+
+		for (let i = 0; i < scripts.length; i++) {
 			script.remove();
 		}
 	}
@@ -49,6 +58,7 @@ export const useRouter = () => {
 						document.getElementById('app').innerHTML = fullHtml;
 
 						loadScripts();
+						removeScripts();
 					})
 					.catch(error => {
 						console.error(error);

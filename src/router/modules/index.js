@@ -3,4 +3,5 @@ export const RouteModules = [
 	{ path: '/', fileName: 'home', layout: 'dashboard', permission: 'auth' },
 	{ path: '/contact', fileName: 'contact', layout: 'dashboard', permission: 'auth' },
 	{ path: '/about', fileName: 'about', layout: 'dashboard', permission: 'auth' },
+	{ path: '/settings', fileName: 'settings', layout: 'dashboard', permission: 'auth' },
 ];

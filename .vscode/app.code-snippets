@@ -182,7 +182,6 @@
 	"consoleLog": {
 		"prefix": "clg",
 		"body": [
-			"// eslint-disable-next-line no-console",
 			"console.log('$1');",
 		],
 		"description": "Displays a message in the console"
