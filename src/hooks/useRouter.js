@@ -1,10 +1,11 @@
 import page from 'page';
-import { useAuthentication } from './useAuthentication';
-import {startDashboardModule} from "@/layouts/dashboard.js";
+import { useAuthentication } from '@/hooks/useAuthentication';
+import { useDashboardUtils } from '@/hooks/useDashboardUtils';
+
 
 export const useRouter = () => {
-
 	const { isAuthenticated } = useAuthentication();
+	const { starstartDashboardModule } = useDashboardUtils();
 
 	function loadPage(pathHTML, pathJS, layout = null) {
 		const layouts = {
@@ -34,7 +35,7 @@ export const useRouter = () => {
 				script.src = pathJS;
 				document.body.appendChild(script);
 
-				startDashboardModule();
+				starstartDashboardModule();
 			})
 			.catch(error => {
 				console.error(error);

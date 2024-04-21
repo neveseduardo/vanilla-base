@@ -1,6 +1,6 @@
 import page from 'page';
 import { RouteModules } from './modules/index.js';
-import { useRouter } from '@/composables/useRouter.js';
+import { useRouter } from '@/hooks/useRouter.js';
 
 const { loadPage, routeMiddleware} = useRouter();
 

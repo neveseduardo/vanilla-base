@@ -1,5 +1,7 @@
 <div class="dashboard-layout">
-	<aside class="dashboard-layout-sidebar opened">
+	<aside class="dashboard-layout-sidebar">
+		
+
 		<div class="dashboard-layout-sidebar-title">
 			<div class="sidebar-icon-wrapper">
 				<figure class="user-avatar"><img src="https://img.freepik.com/fotos-premium/um-personagem-de-desenho-animado-do-avatar-do-jogo_667286-2738.jpg" alt=""></figure>
@@ -24,7 +26,7 @@
 				</a>
 				<div class="dashboard-layout-sidebar-menu-children">
 					<ul>
-						<li><a onclick="navigateToRoute(event, '/aluno/cadastro')">Consultar cadastro</a></li>
+						<li><a onclick="navigateToRoute(event, '/aluno/cadastro')">Cadastrar Aluno</a></li>
 						<li><a onclick="navigateToRoute(event, '/aluno/frequencia')">Consultar frequência</a></li>
 						<li><a onclick="navigateToRoute(event, '/aluno/matricula')">Emitir declaração de matrícula</a></li>
 						<li><a onclick="navigateToRoute(event, '/aluno/boletim')">Consultar Boletim</a></li>
@@ -68,7 +70,11 @@
 		</ul>
     </aside>
 
-    <div id="content" class="dashboard-layout-content opened">
+    <div id="content" class="dashboard-layout-content">
+		<button class="sidebar-toggler">
+			<span class="iconify-inline" data-icon="ic:round-keyboard-arrow-left"></span>
+		</button>
+		
 		{{{body}}}
     </div>
 </div>
