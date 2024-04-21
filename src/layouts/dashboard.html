@@ -2,19 +2,17 @@
 	<aside class="dashboard-layout-sidebar opened">
 		<div class="dashboard-layout-sidebar-title">
 			<div class="sidebar-icon-wrapper">
-				<button class="sidebar-toggler">
-					<span class="iconify-inline" data-icon="ic:baseline-menu"></span>
-				</button>
+				<figure class="user-avatar"><img src="https://img.freepik.com/fotos-premium/um-personagem-de-desenho-animado-do-avatar-do-jogo_667286-2738.jpg" alt=""></figure>
 			</div>
 			
-			<a href="/" class="sidebar-text-wrapper">
-				<h1>SIDEBAR TITLE</h1>
+			<a class="sidebar-text-wrapper">
+				<h1 class="text-primary">Nome do Usuário</h1>
 			</a>
 		</div>
 
 		<ul class="dashboard-layout-sidebar-menu">
 			<li class="dashboard-layout-sidebar-menu-item">
-				<a class="dashboard-layout-sidebar-menu-parent">
+				<a class="dashboard-layout-sidebar-menu-parent text-primary">
 					<div class="sidebar-icon-wrapper">
 						<span class="iconify-inline" data-icon="ic:outline-manage-accounts"></span>
 					</div>
@@ -26,20 +24,23 @@
 				</a>
 				<div class="dashboard-layout-sidebar-menu-children">
 					<ul>
-						<li><a href="/about">SUBMENU</a></li>
-						<li><a href="/about">SUBMENU</a></li>
-						<li><a href="/about">SUBMENU</a></li>
-						<li><a href="/about">SUBMENU</a></li>
+						<li><a onclick="navigateToRoute(event, '/aluno/cadastro')">Consultar cadastro</a></li>
+						<li><a onclick="navigateToRoute(event, '/aluno/frequencia')">Consultar frequência</a></li>
+						<li><a onclick="navigateToRoute(event, '/aluno/matricula')">Emitir declaração de matrícula</a></li>
+						<li><a onclick="navigateToRoute(event, '/aluno/boletim')">Consultar Boletim</a></li>
+						<li><a onclick="navigateToRoute(event, '/aluno/cancelar-matricula')">Cancelamento Matrícula</a></li>
+						<li><a onclick="navigateToRoute(event, '/aluno/formandos')">Lista de Formandos</a></li>
+						<li><a onclick="navigateToRoute(event, '/aluno/certificado-conclusao')">Certificado de Conclusão</a></li>
 					</ul>
 				</div>
 			</li>
 
 			<li class="dashboard-layout-sidebar-menu-item">
-				<a class="dashboard-layout-sidebar-menu-parent">
+				<a class="dashboard-layout-sidebar-menu-parent text-primary">
 					<div class="sidebar-icon-wrapper">
 						<span class="iconify-inline" data-icon="ic:baseline-space-dashboard"></span>
 					</div>
-					<span class="sidebar-text-wrapper">SIDEBAR LINK</span>
+					<span class="sidebar-text-wrapper">Turmas</span>
 
 					<div class="sidebar-icon-wrapper">
 						<span class="iconify-inline dropdown-icon transition-all" data-icon="ic:round-keyboard-arrow-down"></span>
@@ -47,16 +48,17 @@
 				</a>
 				<div class="dashboard-layout-sidebar-menu-children">
 					<ul>
-						<li><a href="/about">SUBMENU</a></li>
-						<li><a href="/about">SUBMENU</a></li>
-						<li><a href="/about">SUBMENU</a></li>
-						<li><a href="/about">SUBMENU</a></li>
+						<li><a onclick="navigateToRoute(event, '/turmas/cadastrar')">Cadastrar Turma</a></li>
+						<li><a onclick="navigateToRoute(event, '/turmas/matricula')">Matricular Aluno</a></li>
+						<li><a onclick="navigateToRoute(event, '/turmas/visualizar')">Visualizar Turmas</a></li>
+						<li><a onclick="navigateToRoute(event, '/turmas/ativar_inativar')">Ativar/Inativar Turma</a></li>
+						<li><a onclick="navigateToRoute(event, '/turmas/lancar_frequencia')">Lançar Frequência</a></li>
 					</ul>
 				</div>
 			</li>
 
 			<li class="dashboard-layout-sidebar-menu-item">
-				<a href="/settings" class="dashboard-layout-sidebar-menu-parent">
+				<a onclick="navigateToRoute(event, '/settings')" class="dashboard-layout-sidebar-menu-parent text-primary">
 					<div class="sidebar-icon-wrapper">
 						<span class="iconify-inline" data-icon="ic:outline-settings"></span>
 					</div>

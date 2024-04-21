@@ -1,6 +1,7 @@
 :root {
-	--bg-default: #CECECE;
-	--text-color-default: #185f8f;
+	--bg-primary: #0C098E;
+	--bg-default: #ECECEC;
+	--text-color-default: #0C098E;
 	--sidebar-opened-width: 300px;
 	--sidebar-closed-width: 60px;
 }

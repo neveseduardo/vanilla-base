@@ -1,19 +1,26 @@
 import page from 'page';
-import { RouteModules } from './modules';
-import { useRouter } from '@/composables/useRouter';
+import { RouteModules } from './modules/index.js';
+import { useRouter } from '@/composables/useRouter.js';
 
-const { loadPage, routeMiddleware } = useRouter();
+const { loadPage, routeMiddleware} = useRouter();
 
-export const router = () => {
-	RouteModules.forEach((_) => {
-		page(_.path, routeMiddleware(_.permission), () => {
-			loadPage(_.fileName, _.layout);
-		});
-	});
+export function navigateToRoute(event, route, options = {}) {
+    event.preventDefault();
+    page(route, options);
+}
 
-	page('*', () => {
-		loadPage('notfound');
-	});
+window.navigateToRoute = navigateToRoute;
 
-	page();
+export const router = async () => {
+    RouteModules.forEach(route => {
+        page(route.path, routeMiddleware(route.permission), async () => {
+            await loadPage(route.moduleHTML, route.moduleJS, route.layout);
+        });
+    });
+
+    page('*', async () => {
+        await loadPage("/src/pages/notfound/index.html", "/src/pages/notfound/index.js");
+    });
+
+    await page.start();
 };

@@ -1,38 +1,12 @@
 import page from 'page';
 import { useAuthentication } from './useAuthentication';
+import {startDashboardModule} from "@/layouts/dashboard.js";
 
 export const useRouter = () => {
 
 	const { isAuthenticated } = useAuthentication();
 
-	function loadScripts() {
-		const scripts = document.getElementById('app').querySelectorAll('script');
-
-		for (let i = 0; i < scripts.length; i++) {
-			const script = scripts[i];
-			const dataMode = script.getAttribute('data-mode');
-
-			if (dataMode === 'module') {
-				const newScript = document.createElement('script');
-				newScript.type = 'module';
-				newScript.src = script.src;
-				newScript.setAttribute('data-mode', 'module');
-				document.head.appendChild(newScript);
-			}
-
-			script.remove();
-		}
-	}
-
-	function removeScripts() {
-		const scripts = document.getElementById('app').querySelectorAll('script');
-
-		for (let i = 0; i < scripts.length; i++) {
-			script.remove();
-		}
-	}
-
-	function loadPage(pageName, layout = 'dashboard') {
+	function loadPage(pathHTML, pathJS, layout = null) {
 		const layouts = {
 			'auth': '/src/layouts/authentication.html',
 			'dashboard': '/src/layouts/dashboard.html',
@@ -45,25 +19,22 @@ export const useRouter = () => {
 				}
 				return response.text();
 			})
-			.then(layoutHtml => {
-				fetch(`/src/pages/${pageName}.html`)
-					.then(response => {
-						if (!response.ok) {
-							throw new Error('Erro ao carregar o conteúdo da página');
-						}
-						return response.text();
-					})
-					.then(async (contentHtml) => {
-						const fullHtml = layoutHtml.replace('{{{body}}}', contentHtml);
-						document.getElementById('app').innerHTML = fullHtml;
+			.then(async (layoutHtml) => {
+				const response = await fetch(pathHTML);
+				const html = await response.text();
+				const fullHtml = layoutHtml.replace('{{{body}}}', html);
+				
+				if (layout) {
+					document.getElementById('app').innerHTML = fullHtml;
+				} else {
+					document.getElementById('app').innerHTML = html;
+				}
 
-						loadScripts();
-						removeScripts();
-					})
-					.catch(error => {
-						console.error(error);
-						document.getElementById('app').innerHTML = 'Erro ao carregar a página';
-					});
+				const script = document.createElement('script');
+				script.src = pathJS;
+				document.body.appendChild(script);
+
+				startDashboardModule();
 			})
 			.catch(error => {
 				console.error(error);

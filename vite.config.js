@@ -3,6 +3,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
 	plugins: [],
+	assetsInclude: ['**/*.html'],
 	server: {
 		port: 8080,
 		host: true,
