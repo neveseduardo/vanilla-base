@@ -7,6 +7,7 @@ on:
 
 jobs:
   build:
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
@@ -21,7 +22,9 @@ jobs:
         run: npm install
 
       - name: Configure vite base
-        run: sed -i "s|base: ''|base: '/${{ github.event.repository.name }}/'|" vite.config.js
+        run: node configureViteBase.js
+        env:
+          GITHUB_REPOSITORY: ${{ github.repository }}
 
       - name: Build project
         run: npm run build
