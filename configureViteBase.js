@@ -1,4 +1,4 @@
-const fs = require('fs');
+import fs from 'fs';
 
 const repoName = process.env.GITHUB_REPOSITORY.split('/')[1];
 const viteConfigPath = 'vite.config.js';
