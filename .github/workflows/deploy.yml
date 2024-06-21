@@ -21,7 +21,7 @@ jobs:
         run: npm install
 
       - name: Configure vite base
-        run: sed -i 's|base: "",|base: "/${{ github.event.repository.name }}/",|' vite.config.js
+        run: sed -i "s|base: ''|base: '/${{ github.event.repository.name }}/'|" vite.config.js
 
       - name: Build project
         run: npm run build
