@@ -7,7 +7,6 @@ on:
 
 jobs:
   build:
-    name: Build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
@@ -22,7 +21,7 @@ jobs:
         run: npm install
 
       - name: Configure vite base
-        run: sed -i 's|base: "",|base: "/${{ github.repository }}/",|' vite.config.js
+        run: sed -i 's|base: "",|base: "/${{ github.event.repository.name }}/",|' vite.config.js
 
       - name: Build project
         run: npm run build
@@ -34,13 +33,13 @@ jobs:
 
   deploy:
     needs: build
+    runs-on: ubuntu-latest
     permissions:
       pages: write
       id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
