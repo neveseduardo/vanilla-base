@@ -21,11 +21,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Configure vite
+      - name: Configure vite base
         run: |
-          echo 'export default {
-            base: "/${{ github.event.repository.name }}/"
-          }' > vite.config.js
+          sed -i 's|base: .*,|base: "/${{ github.event.repository.name }}/",|' vite.config.js
 
       - name: Build project
         run: npm run build
