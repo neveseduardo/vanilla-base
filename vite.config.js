@@ -4,6 +4,7 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   plugins: [],
   build: {
+    outDir: 'root',
     chunkSizeWarningLimit: 1024 * 6,
   },
   server: {
@@ -17,5 +18,13 @@ export default defineConfig({
   resolve: {
     alias: { '@': resolve(__dirname, './src') },
   },
-  base: '', // Espaço reservado para a base
+  base: '/vanilla-base/', // Configuração de base com o sufixo '/vanilla-base/'
+  server: {
+    proxy: {
+      '/': {
+        target: 'http://localhost:8080', // Altere para o seu servidor de desenvolvimento, se aplicável
+        rewrite: (path) => path.replace(/^\/vanilla-base/, '') // Remova o sufixo '/vanilla-base/' das requisições
+      }
+    }
+  }
 });
