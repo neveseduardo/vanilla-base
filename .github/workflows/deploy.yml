@@ -21,13 +21,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Configure vite base
-        run: node configureViteBase.js
-        env:
-          GITHUB_REPOSITORY: ${{ github.repository }}
-
-      - name: Build project
-        run: npm run build
+      # Adicione um passo para substituir as URLs de rota
+      - name: Adjust route URLs
+        run: sed -i "s|href='/|href='/${{ github.event.repository.name }}/|g" dist/index.html
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v2
