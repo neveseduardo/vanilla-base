@@ -1,6 +1,7 @@
 import page from 'page';
 import { RouteModules } from './modules/index.js';
 import { useRouter } from '@/hooks/useRouter.js';
+import { loadRealPath } from '@/utils/index.js';
 
 const { loadPage, routeMiddleware} = useRouter();
 
@@ -19,7 +20,7 @@ export const router = async () => {
     });
 
     page('*', async () => {
-        await loadPage("/src/pages/notfound/index.html", "/src/pages/notfound/index.js");
+        await loadPage(loadRealPath("/src/pages/notfound/index.html"), loadRealPath("/src/pages/notfound/index.js"));
     });
 
     await page.start();

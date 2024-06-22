@@ -5,3 +5,9 @@ export function toggleClasse(elemento, classe) {
 		elemento.classList.add(classe);
 	}
 }
+
+export function loadRealPath(path) {
+	if (!window.location.pathname.startsWith('/vanilla-base/')) {
+		window.location.pathname = '/vanilla-base' + path;
+	}
+}

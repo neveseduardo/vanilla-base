@@ -1,7 +1,7 @@
 import page from 'page';
 import { useAuthentication } from '@/hooks/useAuthentication';
 import { useDashboardUtils } from '@/hooks/useDashboardUtils';
-
+import { loadRealPath } from '@/utils';
 
 export const useRouter = () => {
 	const { isAuthenticated } = useAuthentication();
@@ -9,8 +9,8 @@ export const useRouter = () => {
 
 	function loadPage(pathHTML, pathJS, layout = null) {
 		const layouts = {
-			'auth': '/src/layouts/authentication.html',
-			'dashboard': '/src/layouts/dashboard.html',
+			'auth': loadRealPath('/src/layouts/authentication.html'),
+			'dashboard': loadRealPath('/src/layouts/dashboard.html'),
 		};
 
 		fetch(layouts[layout])
@@ -46,14 +46,14 @@ export const useRouter = () => {
 	function routeMiddleware(name = 'guest') {
 		function requireAuth(ctx, next) {
 			if (!isAuthenticated()) {
-				page.redirect('/login');
+				page.redirect(loadRealPath('/login'));
 			} else {
 				next();
 			}
 		}
 		function requireGuest(ctx, next) {
 			if (isAuthenticated()) {
-				page.redirect('/');
+				page.redirect(loadRealPath('/'));
 			} else {
 				next();
 			}
